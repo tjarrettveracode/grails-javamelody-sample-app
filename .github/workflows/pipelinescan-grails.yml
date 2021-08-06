@@ -37,7 +37,7 @@ jobs:
 
     - name: Build application with grails
       if: steps.check_grails.outputs.files_exists == 'true'
-      run: ./grailsw assemble
+      run: grailsw assemble
 
     # zip the project and move it to a staging directory
     - name: Zip Project
